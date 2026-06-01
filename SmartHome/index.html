@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <script src="https://kit.fontawesome.com/cfe09d334f.js" crossorigin="anonymous"></script>
+    <title>SmartHome</title>
+<style>
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .w3-bar {
+        color: #1E3A5F;
+        background-color: #fff;
+    }
+    .w3-bar .w3-button:hover {
+        background-color: #2EC4B6 !important;
+    }
+
+    #main {
+    margin-top: 60px;
+    }
+
+    #main p, li {
+        color: #334155;
+    }
+
+    header {
+        background-color: #1E3A5F;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    header h1 {
+        color: #fff;
+    }
+
+    header h2,p {
+        color: #E2E8F0;
+    }
+
+    #home h2, h3, h5{
+        color: #1E3A5F;
+    }
+
+    #parceiros .w3-card {
+        margin-top: 1em;
+    }
+
+    .faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    }
+
+    .faq-item summary {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+
+            .slogan {
+                display: none;
+            }
+
+            .w3-card {
+                margin-top: 1em;
+            }
+    }
+
+</style>
+
+</head>
+<body>
+    <div>
+        <div class="w3-top w3-container">
+
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav class="w3-bar">
+                <a href="#home" style="width:25%" class="w3-bar-item w3-button"><i class="fa fa-home w3-medium w3-padding"></i>Home</a>
+                <a href="#parceiros" style="width:25%" class="w3-bar-item w3-button"><i class="fa fa-handshake w3-medium w3-padding"></i>Parceiros</a>
+                <a href="#faq" style="width:25%" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-question w3-medium w3-padding"></i>FAQ</a>
+                <a href="#contato" style="width:25%" class="w3-bar-item w3-button"><i class="fa fa-envelope w3-medium w3-padding"></i>Contato</a>
+            </nav>
+
+            <!-- HEADER -->
+            <header class="w3-container">
+                <div class="logo">
+                    <img src="/imagens/logo.png" alt="Logo da empresa" class="w3-image w3-hover-opacity" width="50px">
+                    <h1><b>SmartHome</b></h1>
+                </div>
+                <h2 class="w3-medium slogan">Transformamos sua casa em um ambiente inteligente, seguro e conectado.</h2>               
+            </header>
+
+        </div>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+         <div class="w3-container" id="main">
+            <!-- HOME -->
+            <div class="w3-content w3-padding-64" id="home">
+                <h3 class="w3-center" style="text-shadow:1px 1px 0 #444; margin-top: 2.5em;">Soluções modernas de automação residencial para proporcionar mais conforto, praticidade e tranquilidade no seu dia a dia.</h3>
+
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                        <div class="w3-card">
+                        <img src="/imagens/iluminacao.jpg" alt="Controlando uma lâmpada pelo celular" class="w3-image w3-hover-opacity" style="width:100%">
+                        <div class="w3-container">
+                            <h5 class="w3-center">Iluminação</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-card">
+                        <img src="/imagens/audio.jpg" alt="Sala de estar com sistema de som" class="w3-image w3-hover-opacity" style="width:100%">
+                        <div class="w3-container">
+                            <h5 class="w3-center">Áudio</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-card">
+                        <img src="/imagens/controle-de-acessos.jpg" alt="Controlador de acesso na parede da garagem" class="w3-image w3-hover-opacity" style="width:100%">
+                        <div class="w3-container">
+                            <h5 class="w3-center">Controle de Acessos</h5>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOBRE A EMPRESA -->
+                <div class="w3-center">
+                    <h2 style="margin-top: 2em">Sobre a Empresa</h2>
+                    <p>A SmartHome nasceu da paixão por tecnologia e inovação. Identificamos que muitas pessoas desejavam tornar suas residências mais inteligentes, mas encontravam soluções complexas e de difícil implementação. Com isso, criamos uma empresa focada em oferecer automação residencial acessível, segura e personalizada para cada cliente.</p>
+                    <img src="/imagens/sobre-nos.jpg" alt="Colaborador realizando a configuração do tablet de controle" class="w3-image w3-hover-opacity">
+                </div>
+
+                <!-- MISSÃO, VISÃO E VALORES -->
+                <div class="w3-center">
+                    <h2 style="margin-top: 2em">Missão, Visão e Valores</h2>
+
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-third">
+                        <div class="w3-card">
+                            <header class="w3-container">
+                                <h1>Missão</h1>
+                            </header>
+                            <div class="w3-container">
+                            <p>Desenvolver soluções inteligentes que proporcionem conforto, segurança e praticidade para nossos clientes.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w3-third">
+                        <div class="w3-card">
+                            <header class="w3-container">
+                                <h1>Visão</h1>
+                            </header>
+                            <div class="w3-container">
+                            <p>Ser referência em automação residencial, conectando tecnologia e qualidade de vida através de soluções modernas e acessíveis.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w3-third">
+                        <div class="w3-card">
+                            <header class="w3-container">
+                                <h1>Valores</h1>
+                            </header>
+                            <div class="w3-container">
+                                <ul style="text-align: left;">
+                                    <li>Inovação</li>
+                                    <li>Transparência</li>
+                                    <li>Segurança</li>
+                                    <li>Excelência</li>
+                                    <li>Compromisso com o cliente</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PARCEIROS -->
+            <div class="w3-content" id="parceiros">
+                <h2 class="w3-center w3-xxlarge" style="color: #1E3A5F;"><b>Parceiros</b></h2>
+                <div class="w3-margin-top">
+                    <div class="w3-center">
+                        <div class="w3-card">
+                        <img src="/imagens/control-id_parceiro.png" alt="Logotipo da Control ID" class="w3-image w3-hover-opacity w3-padding" style="width:50%">
+                        </div>
+
+                        <div class="w3-card">
+                        <img src="/imagens/hikvision_parceiro.png" alt="Logotipo da Hikvision" class="w3-image w3-hover-opacity w3-padding" style="width:50%">
+                        </div>
+
+                        <div class="w3-card">
+                        <img src="/imagens/intelbras_parceiro.png" alt="Logotipo da Intelbras" class="w3-image w3-hover-opacity" style="width:50%">
+                        </div>
+
+                        <div class="w3-card">
+                        <img src="/imagens/tp-link_parceiro.png" alt="Logotipo da TP-Link" class="w3-image w3-hover-opacity w3-padding" style="width:50%">
+                        </div>
+
+                        <div class="w3-card">
+                        <img src="/imagens/philips_parceiro.png" alt="Logotipo da Philips" class="w3-image w3-hover-opacity w3-padding" style="width:50%">
+                        </div>
+
+                        <div class="w3-card">
+                        <img src="/imagens/sonos_parceiro.png" alt="Logotipo da Sonos" class="w3-image w3-hover-opacity" style="width:50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="w3-content" id="faq">
+                <h2 class="w3-center w3-xxlarge" style="color: #1E3A5F; margin-top: 2em;"><b>FAQ</b></h2>
+                <details class="faq-item">
+                    <summary>Quanto custa automatizar uma residência?</summary>
+                    <p>O valor varia conforme o tamanho do imóvel, a quantidade de dispositivos e as funcionalidades desejadas. Cada projeto é desenvolvido de forma personalizada para atender às necessidades do cliente.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Posso controlar minha casa pelo celular?</summary>
+                    <p>Sim. Nossas soluções permitem controlar iluminação, câmeras, fechaduras, climatização e outros dispositivos por meio de aplicativo para smartphone.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>É possível automatizar uma casa já construída?</summary>
+                    <p>Sim. A maioria dos sistemas pode ser instalada em imóveis já construídos, minimizando intervenções na estrutura existente.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>O sistema funciona sem internet?</summary>
+                    <p>Algumas funcionalidades dependem da conexão com a internet, principalmente o acesso remoto. Entretanto, diversas automações continuam operando localmente mesmo em caso de indisponibilidade da rede.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Os dispositivos são compatíveis com Alexa e Google Assistant?</summary>
+                    <p>Sim. Trabalhamos com equipamentos compatíveis com os principais assistentes virtuais do mercado, permitindo controle por comandos de voz.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Posso automatizar apenas um ambiente da casa?</summary>
+                    <p>Sim. É possível iniciar o projeto por um único cômodo, como sala, quarto ou área externa, e expandir a automação futuramente.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Quanto tempo leva a instalação?</summary>
+                    <p>O prazo depende da complexidade do projeto. Instalações simples podem ser concluídas em poucas horas, enquanto soluções mais completas podem demandar alguns dias.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>A automação residencial aumenta a segurança?</summary>
+                    <p>Sim. Os sistemas podem incluir câmeras, sensores de presença, alarmes, videoporteiros e fechaduras inteligentes, proporcionando maior controle e monitoramento do imóvel.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Vocês oferecem suporte após a instalação?</summary>
+                    <p>Sim. Disponibilizamos suporte técnico e orientação para garantir o funcionamento adequado dos sistemas instalados.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como solicitar um orçamento?</summary>
+                    <p>Basta preencher o formulário de contato ou entrar em contato pelos canais disponibilizados no site. Nossa equipe realizará uma análise das necessidades e apresentará uma proposta personalizada.</p>
+                </details>
+            </div>
+
+            <!-- CONTATO -->
+            <div class="w3-content" id="contato">
+                <h2 class="w3-center w3-xxlarge" style="color: #1E3A5F; margin-top: 2em;"><b>Contato</b></h2>
+                <br>
+                <p>Entre em contato:</p>
+                <form>
+                    <p>
+                        <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Assunto">
+                    </p>
+                    <textarea class="w3-input w3-border" rows="6" placeholder="Mensagem" required name="Mensagem"></textarea>
+                    <br>
+                    <br>
+                    <p>
+                        <button class="w3-button w3-round-xlarge w3-padding-large" style="background-color: #2EC4B6; margin-bottom: 2em;" type="submit">
+                            <i class="fa fa-paper-plane"></i> Enviar mensagem
+                        </button>
+                    </p>
+                </form>
+            </div>
+
+            <!-- RODAPÉ -->
+            <footer class="w3-container w3-padding-32" style="background-color:#1E3A5F; color:white;">
+
+                <div class="w3-row">
+                    <div class="w3-third">
+                        <h4 style="margin-top:0;"><b>SmartHome</b></h4>
+                        <p style="color: #fff; padding-right: 1em;">Transformando residências em ambientes inteligentes, seguros e conectados.</p>
+                    </div>
+
+                    <div class="w3-third">
+                        <h4><b>Contato</b></h4>
+                        <p style="color: #fff;"><i class="fa fa-phone fa-fw"></i> (11) 4000-1234</p>
+                        <p style="color: #fff;"><i class="fa fa-envelope fa-fw"></i> contato@smarthome.com.br</p>
+                        <p style="color: #fff;"><i class="fa fa-map-marker fa-fw"></i> Rua dos Ameríndios, 854 - São Paulo/SP</p>
+                    </div>
+
+                    <div class="w3-third">
+                        <h4><b>Redes Sociais</b></h4>
+                        <p><a href="https://instagram.com" target="_blank" style="color:white;text-decoration:none;">
+                            <i class="fa fa-instagram fa-fw"></i>
+                            Instagram</a>
+                        </p>
+
+                        <p>
+                            <a href="https://facebook.com" target="_blank" style="color:white;text-decoration:none;">
+                                <i class="fa fa-facebook-official fa-fw"></i>
+                                Facebook</a>
+                        </p>
+
+                        <p>
+                            <a href="https://linkedin.com" target="_blank" style="color:white;text-decoration:none;">
+                                <i class="fa fa-linkedin-square fa-fw"></i>
+                                LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+                <hr style="border-color:#2EC4B6">
+                <p class="w3-center w3-small" style="margin-bottom:0; color: #fff;">
+                    © 2026 SmartHome Connect. Todos os direitos reservados.
+                </p>
+            
+            </footer>
+    </div>
+</body>
+</html>

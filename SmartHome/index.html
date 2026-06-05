@@ -48,19 +48,100 @@
         color: #E2E8F0;
     }
 
+    #home, #servicos, #parceiros, #faq, #contato {
+        scroll-margin-top: 120px;
+    }
+
     #home h2, h3, h5{
         color: #1E3A5F;
     }
+
+    #servicos .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    #servicos .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    #servicos .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    #servicos .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+    #servicos .prev:hover, .next:hover {
+        background-color: #1E3A5F;
+    }
+
+    #servicos .text .title {
+        color: #fff;
+        background-color: #1E3A5F;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #servicos .subtitle {
+        font-size: 10px;
+    }
+
+    #servicos .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.9s ease;
+    }
+
+    #servicos .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    #servicos .fade {
+        animation-name: fade;
+        animation-duration: 3s;
+    }
+
+    @keyframes fade {
+        from {opacity: .7} 
+        to {opacity: 1}
+    }   
+
 
     #parceiros .w3-card {
         margin-top: 1em;
     }
 
     .faq-item {
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
     }
 
     .faq-item summary {
@@ -73,12 +154,22 @@
                 margin-left: 0
             }
 
-            .slogan {
+            .w3-card {
+                margin-top: 1em;
+            }
+
+            #servicos .prev, .next, .text {
+                font-size: 11px
+            }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .slogan {
                 display: none;
             }
 
-            .w3-card {
-                margin-top: 1em;
+            #home, #servicos, #parceiros, #faq, #contato {
+                scroll-margin-top: 140px;
             }
     }
 
@@ -91,10 +182,11 @@
 
             <!-- MENU DE NAVEGAÇÃO -->
             <nav class="w3-bar">
-                <a href="#home" style="width:25%" class="w3-bar-item w3-button"><i class="fa fa-home w3-medium w3-padding"></i>Home</a>
-                <a href="#parceiros" style="width:25%" class="w3-bar-item w3-button"><i class="fa fa-handshake w3-medium w3-padding"></i>Parceiros</a>
-                <a href="#faq" style="width:25%" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-question w3-medium w3-padding"></i>FAQ</a>
-                <a href="#contato" style="width:25%" class="w3-bar-item w3-button"><i class="fa fa-envelope w3-medium w3-padding"></i>Contato</a>
+                <a href="#home" style="width:20%" class="w3-bar-item w3-button"><i class="fa fa-home w3-medium w3-padding"></i>Home</a>
+                <a href="#servicos" style="width:20%" class="w3-bar-item w3-button"><i class="fa-solid fa-screwdriver-wrench w3-padding"></i>Serviços</a>
+                <a href="#parceiros" style="width:20%" class="w3-bar-item w3-button"><i class="fa fa-handshake w3-medium w3-padding"></i>Parceiros</a>
+                <a href="#faq" style="width:20%" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-question w3-medium w3-padding"></i>FAQ</a>
+                <a href="#contato" style="width:20%" class="w3-bar-item w3-button"><i class="fa fa-envelope w3-medium w3-padding"></i>Contato</a>
             </nav>
 
             <!-- HEADER -->
@@ -112,38 +204,10 @@
          <div class="w3-container" id="main">
             <!-- HOME -->
             <div class="w3-content w3-padding-64" id="home">
-                <h3 class="w3-center" style="text-shadow:1px 1px 0 #444; margin-top: 2.5em;">Soluções modernas de automação residencial para proporcionar mais conforto, praticidade e tranquilidade no seu dia a dia.</h3>
-
-                <div class="w3-row-padding w3-margin-top">
-                    <div class="w3-third">
-                        <div class="w3-card">
-                        <img src="/imagens/iluminacao.jpg" alt="Controlando uma lâmpada pelo celular" class="w3-image w3-hover-opacity" style="width:100%">
-                        <div class="w3-container">
-                            <h5 class="w3-center">Iluminação</h5>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="w3-third">
-                        <div class="w3-card">
-                        <img src="/imagens/audio.jpg" alt="Sala de estar com sistema de som" class="w3-image w3-hover-opacity" style="width:100%">
-                        <div class="w3-container">
-                            <h5 class="w3-center">Áudio</h5>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="w3-third">
-                        <div class="w3-card">
-                        <img src="/imagens/controle-de-acessos.jpg" alt="Controlador de acesso na parede da garagem" class="w3-image w3-hover-opacity" style="width:100%">
-                        <div class="w3-container">
-                            <h5 class="w3-center">Controle de Acessos</h5>
-                        </div>
-                        </div>
-                    </div>
-                </div>
+                <h3 class="w3-center" style="text-shadow:1px 1px 0 #444; margin-top: 1em;">Soluções modernas de automação residencial para proporcionar mais conforto, praticidade e tranquilidade no seu dia a dia.</h3>
 
                 <!-- SOBRE A EMPRESA -->
                 <div class="w3-center">
-                    <h2 style="margin-top: 2em">Sobre a Empresa</h2>
                     <p>A SmartHome nasceu da paixão por tecnologia e inovação. Identificamos que muitas pessoas desejavam tornar suas residências mais inteligentes, mas encontravam soluções complexas e de difícil implementação. Com isso, criamos uma empresa focada em oferecer automação residencial acessível, segura e personalizada para cada cliente.</p>
                     <img src="/imagens/sobre-nos.jpg" alt="Colaborador realizando a configuração do tablet de controle" class="w3-image w3-hover-opacity">
                 </div>
@@ -192,6 +256,48 @@
                     </div>
                 </div>
 
+            </div>
+
+            <!-- SERVIÇOS -->
+            <div class="w3-content" id="servicos">
+                <div class="w3-center" style="margin-bottom: 64px;">
+                    <h2 class="w3-center w3-xxlarge" style="color: #1E3A5F;"><b>Serviços</b></h2>
+
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="/imagens/iluminacao.jpg" style="width:100%">
+                            <div class="text">
+                                <p class="title">Iluminação</p>
+                                <p class="subtitle">Imagem: pexels.com</p>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/imagens/audio.jpg" style="width:100%">
+                            <div class="text">
+                                <p class="title">Áudio</p>
+                                <p class="subtitle">Imagem: pexels.com</p>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/imagens/controle-de-acessos.jpg" style="width:100%">
+                            <div class="text">
+                                <p class="title">Controle de Acessos</p>
+                                <p class="subtitle">Imagem: pexels.com</p>
+                            </div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+
+                </div>
             </div>
 
             <!-- PARCEIROS -->
@@ -344,10 +450,50 @@
                 </div>
                 <hr style="border-color:#2EC4B6">
                 <p class="w3-center w3-small" style="margin-bottom:0; color: #fff;">
-                    © 2026 SmartHome Connect. Todos os direitos reservados.
+                    © 2026 SmartHome. Todos os direitos reservados.
                 </p>
             
             </footer>
     </div>
+
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+        function autoSlides() {
+            slideIndex++;
+            showSlides(slideIndex);
+            setTimeout(autoSlides, 4000);
+        }  
+
+        autoSlides();
+
+    </script>
+
 </body>
 </html>

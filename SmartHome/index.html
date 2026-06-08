@@ -38,7 +38,12 @@
         align-items: center;
     }
 
+    header a {
+        text-decoration: none;
+    }
+
     header .logo {
+        cursor: pointer;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -195,10 +200,12 @@
 
             <!-- HEADER -->
             <header class="w3-container">
-                <div class="logo">
-                    <img src="/imagens/logo.png" alt="Logo da empresa" class="w3-image w3-hover-opacity" width="50px">
-                    <h1><b>SmartHome</b></h1>
-                </div>
+                <a href="#home">
+                    <div class="logo">
+                        <img src="/imagens/logo.png" alt="Logo da empresa" class="w3-image" width="50px">
+                        <h1><b>SmartHome</b></h1>
+                    </div>
+                </a>
                 <h2 class="w3-medium slogan">Transformamos sua casa em um ambiente inteligente, seguro e conectado.</h2>               
             </header>
 
